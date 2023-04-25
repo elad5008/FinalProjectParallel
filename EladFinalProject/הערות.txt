@@ -1,0 +1,2 @@
+* עובד לאחר sudo apt-get install nvidia-cuda-toolkit
+בvLab
