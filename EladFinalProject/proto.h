@@ -26,6 +26,7 @@ typedef struct {
 FILE* readFile(double* value);
 Object readMat(FILE* fp);
 Object* readMatrices(FILE* fp, int* size, int toClose) ;
+double myAbs(double num);
 
 
 Findings* searchObjectsInPictures(Object* pictures, int numOfPics, Object* objects, int numOfObjects, double matchingValue);
