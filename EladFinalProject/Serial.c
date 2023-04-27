@@ -76,7 +76,7 @@ void resetFindings(int** findings)
 {
     for (int i = 0; i < SIZE; i++)
     {
-        for (int j = 0; j < DETAILS; j++)
+        for (int j = 0; j < SIZE; j++)
         {
             findings[i][j] = -1;
         }   
@@ -98,7 +98,7 @@ int main(int argc, char *argv[])
     int foundThree = 0, nextPic = 0, nextObj = 0, idx = 0;
     int** findings = (int**)calloc(SIZE, sizeof(int*));
     for (int i = 0; i < SIZE; i++)
-        findings[i] = (int*)calloc(DETAILS, sizeof(int));
+        findings[i] = (int*)calloc(SIZE, sizeof(int));
     FILE* wf = fopen(OUTPUT, "w");
 
     for (int i = 0; i < N; i++)
